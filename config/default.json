@@ -1,0 +1,6 @@
+{
+    "mongoURI": "mongodb+srv://lorax:adminadmin@dev-connector-eflvj.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtToken": "superSecretToken",
+    "githubClientID": "19f1eb1e43ddf5e1dfe3",
+    "githubSecret": "645904c1a70c7c57268d7006d7ef5080a9cdcc7c"
+}

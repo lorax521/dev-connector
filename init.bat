@@ -1,4 +1,5 @@
 npm i express express-validator bcryptjs config gravatar jsonwebtoken mongoose request
+npm i --save @fortawesome/fontawesome-svg-core  @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
 REM dev dependencies
 npm i -D nodemon concurrently
 npx create-react-app client

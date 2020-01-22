@@ -4,8 +4,8 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { getCurrentProfile } from "../../actions/profile";
 import Spinner from "../layout/Spinner";
+import DashboardActions from "./DashboardActions";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 const Dashboard = ({
   getCurrentProfile,
@@ -22,11 +22,13 @@ const Dashboard = ({
     <Fragment>
       <h1 className="large text-primary">Dashboard</h1>
       <p className="lead">
-        <FontAwesomeIcon icon={faUser}></FontAwesomeIcon> Welcome{" "}
+        <FontAwesomeIcon icon="faUser"></FontAwesomeIcon> Welcome{" "}
         {user && user.name}
       </p>
       {profile !== null ? (
-        <Fragment>has</Fragment>
+        <Fragment>
+          <DashboardActions />
+        </Fragment>
       ) : (
         <Fragment>
           <p>You have not set up a profile. Please set up some info!</p>
